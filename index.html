@@ -1,0 +1,379 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>AnyChart Basic Example</title>
+</head>
+
+<body>
+  <div class="tabs">
+    <div class="tabs-trigger">
+      <a href="#tab-1" class="tabs-trigger__item">Июнь</a>
+      <a href="#tab-2" class="tabs-trigger__item">Май</a>
+      <a href="#tab-3" class="tabs-trigger__item">Апрель</a>
+      <a href="#tab-4" class="tabs-trigger__item">Март</a>
+    </div>
+
+    <div id="tab-1" class="tabs-content__item">
+      <div class="june">
+        <div id="container"></div>
+        <div id="container2"></div>
+        <div id="container3"></div>
+        <div id="container4"></div>
+        <div id="container5"></div>
+        <div id="container6"></div>
+      </div>
+    </div>
+
+    <div id="tab-2" class="tabs-content__item">
+      <div class="may">
+        <div id="container7"></div>
+        <div id="container8"></div>
+        <div id="container9"></div>
+        <div id="container10"></div>
+        <div id="container11"></div>
+        <div id="container12"></div>
+      </div>
+    </div>
+
+    <div id="tab-3" class="tabs-content__item">
+      <div class="april">
+        <div id="container13"></div>
+        <div id="container14"></div>
+        <div id="container15"></div>
+        <div id="container16"></div>
+        <div id="container17"></div>
+        <div id="container18"></div>
+      </div>
+    </div>
+
+    <div id="tab-4" class="tabs-content__item">
+      <div class="march">
+        <div id="container19"></div>
+        <div id="container20"></div>
+        <div id="container21"></div>
+        <div id="container22"></div>
+        <div id="container23"></div>
+        <div id="container24"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="https://cdn.anychart.com/js/latest/anychart-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <!------------------------------------------------Июнь----------------------------------------------------->
+  <script>
+    anychart.onDocumentLoad(function () {
+      var chart = anychart.pie([
+        ["Выполнены", 164],
+        ["В работе", 181],
+        ["Отменены", 183]
+      ]);
+      chart.title("Общее Количество заказов");
+      chart.container("container").draw();
+    });
+  </script>
+
+  <script>
+    anychart.onDocumentLoad(function () {
+      var chart = anychart.pie([
+        ["Выполнены", 2503824, 55],
+        ["В работе", 7301787, 95],
+        ["Отменены", 3457362]
+      ]);
+      chart.title("Общая выручка");
+      chart.container("container2").draw();
+    });
+  </script>
+
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Физ. лица", 421],
+      ["Юр. лица", 107]
+    ]);
+    chart.title("Количество заказов по типу клиента");
+    chart.container("container3").draw();
+  });
+</script>
+
+  <script>
+    anychart.onDocumentLoad(function () {
+      var chart = anychart.pie([
+        ["Физ. лица", 7252025, 52],
+        ["Юр. лица", 6161603, 68]
+      ]);
+      chart.title("Выручка заказов по типу клиента");
+      chart.container("container4").draw();
+    });
+  </script>
+
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Яндекс Маркет", 182],
+      ["Директ", 9],
+      ["Google", 2],
+      ["Прямые", 7],
+      ["Другие", 0],
+      ["Не определено", 328]
+    ]);
+    chart.title("Количество заказов по каналам");
+    chart.container("container5").draw();
+  });
+</script>
+
+  <script>
+    anychart.onDocumentLoad(function () {
+      var chart = anychart.pie([
+        ["Яндекс Маркет", 3049348, 73],
+        ["Директ", 109649],
+        ["Google", 23239],
+        ["Прямые", 98680, 58],
+        ["Другие", 0],
+        ["Не определено", 10132711, 89]
+      ]);
+      chart.title("Выручка по каналам трафика");
+      chart.container("container6").draw();
+    });
+  </script>
+
+<!-----------------------------------------------Май----------------------------------------------------->
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Выполнены", 246],
+      ["В работе", 122],
+      ["Отменены", 192]
+    ]);
+    chart.title("Общее Количество заказов");
+    chart.container("container7").draw();
+  });
+</script>
+
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Выполнены", 2889637,73],
+      ["В работе", 5923418,91],
+      ["Отменены", 2530437]
+    ]);
+    chart.title("Общая выручка");
+    chart.container("container8").draw();
+  });
+</script>
+
+<script>
+anychart.onDocumentLoad(function () {
+  var chart = anychart.pie([
+    ["Физ. лица", 406],
+    ["Юр. лица", 154]
+  ]);
+  chart.title("Количество заказов по типу клиента");
+  chart.container("container9").draw();
+});
+</script>
+
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Физ. лица", 4783082,46],
+      ["Юр. лица", 6560411,18]
+    ]);
+    chart.title("Выручка заказов по типу клиента");
+    chart.container("container10").draw();
+  });
+</script>
+
+<script>
+anychart.onDocumentLoad(function () {
+  var chart = anychart.pie([
+    ["Яндекс Маркет", 146],
+    ["Директ", 17],
+    ["Google", 5],
+    ["Прямые", 5],
+    ["Другие", 4],
+    ["Не определено", 383]
+  ]);
+  chart.title("Количество заказов по каналам");
+  chart.container("container11").draw();
+});
+</script>
+
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Яндекс Маркет", 1366001,34],
+      ["Директ", 260570],
+      ["Google", 62014],
+      ["Прямые", 54426],
+      ["Другие", 80540,6],
+      ["Не определено", 9519941,7]
+    ]);
+    chart.title("Выручка по каналам трафика");
+    chart.container("container12").draw();
+  });
+</script>
+
+<!-----------------------------------------------Апрель----------------------------------------------------->
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Выполнены", 219],
+      ["В работе", 99],
+      ["Отменены", 199]
+    ]);
+    chart.title("Общее Количество заказов");
+    chart.container("container13").draw();
+  });
+</script>
+
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Выполнены", 3731295,24],
+      ["В работе", 3813079,76],
+      ["Отменены", 2693679]
+    ]);
+    chart.title("Общая выручка");
+    chart.container("container14").draw();
+  });
+</script>
+
+<script>
+anychart.onDocumentLoad(function () {
+  var chart = anychart.pie([
+    ["Физ. лица", 394],
+    ["Юр. лица", 123]
+  ]);
+  chart.title("Количество заказов по типу клиента");
+  chart.container("container15").draw();
+});
+</script>
+
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Физ. лица", 6147070,63],
+      ["Юр. лица", 4090983,37]
+    ]);
+    chart.title("Выручка заказов по типу клиента");
+    chart.container("container16").draw();
+  });
+</script>
+
+<script>
+anychart.onDocumentLoad(function () {
+  var chart = anychart.pie([
+    ["Яндекс Маркет", 115],
+    ["Директ", 9],
+    ["Google", 8],
+    ["Прямые", 14],
+    ["Другие", 1],
+    ["Не определено", 370]
+  ]);
+  chart.title("Количество заказов по каналам");
+  chart.container("container17").draw();
+});
+</script>
+
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Яндекс Маркет", 1789850,61],
+      ["Директ", 47321,68],
+      ["Google", 78395],
+      ["Прямые", 361524,63],
+      ["Другие", 11330],
+      ["Не определено", 7949632,08]
+    ]);
+    chart.title("Выручка по каналам трафика");
+    chart.container("container18").draw();
+  });
+</script>
+
+<!-----------------------------------------------Март----------------------------------------------------->
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Выполнены", 281],
+      ["В работе", 96],
+      ["Отменены", 266]
+    ]);
+    chart.title("Общее Количество заказов");
+    chart.container("container19").draw();
+  });
+</script>
+
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Выполнены", 7767333,29],
+      ["В работе", 3841900,67],
+      ["Отменены", 5046185]
+    ]);
+    chart.title("Общая выручка");
+    chart.container("container20").draw();
+  });
+</script>
+
+<script>
+anychart.onDocumentLoad(function () {
+  var chart = anychart.pie([
+    ["Физ. лица", 446],
+    ["Юр. лица", 197]
+  ]);
+  chart.title("Количество заказов по типу клиента");
+  chart.container("container21").draw();
+});
+</script>
+
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Физ. лица", 10371938,34],
+      ["Юр. лица", 6283480,62]
+    ]);
+    chart.title("Выручка заказов по типу клиента");
+    chart.container("container22").draw();
+  });
+</script>
+
+<script>
+anychart.onDocumentLoad(function () {
+  var chart = anychart.pie([
+    ["Яндекс Маркет", 193],
+    ["Директ", 14],
+    ["Google", 4],
+    ["Прямые", 4],
+    ["Другие", 4],
+    ["Не определено", 424]
+  ]);
+  chart.title("Количество заказов по каналам");
+  chart.container("container23").draw();
+});
+</script>
+
+<script>
+  anychart.onDocumentLoad(function () {
+    var chart = anychart.pie([
+      ["Яндекс Маркет", 3712734,88],
+      ["Директ", 233463,65],
+      ["Google", 59772],
+      ["Прямые", 38493],
+      ["Другие", 24838],
+      ["Не определено", 12586117,43]
+    ]);
+    chart.title("Выручка по каналам трафика");
+    chart.container("container24").draw();
+  });
+</script>
+
+</body>
+
+</html>

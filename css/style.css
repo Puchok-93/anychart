@@ -1,0 +1,89 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#container,
+#container2,
+#container3,
+#container4,
+#container5,
+#container6,
+#container7,
+#container8,
+#container9,
+#container10,
+#container11,
+#container12,
+#container13,
+#container14,
+#container15,
+#container16,
+#container17,
+#container18,
+#container19,
+#container20,
+#container21,
+#container22,
+#container23,
+#container24  {
+  width: 450px;
+  height: 450px;
+}
+
+.june,
+.may,
+.april,
+.march {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 1000px;
+}
+
+.tabs-content__item {
+  display: none;
+}
+
+.tabs-content__item--active {
+  display: flex;
+}
+
+.tabs-trigger {
+  width: 360px;
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+}
+
+.tabs-trigger__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: rgba(16, 38, 84, 0.5);
+  cursor: pointer;
+  margin-right: 46px;
+}
+
+.tabs-trigger__item--active {
+  color: #102654;
+  position: relative;
+}
+
+.tabs-trigger__item--active::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #d10a42;
+}
